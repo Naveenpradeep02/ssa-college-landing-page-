@@ -45,7 +45,7 @@ form.addEventListener("submit", function (e) {
     .then(() => {
       alert("Form submitted successfully!");
       form.reset();
-      window.location.href = "#"; // change to your page
+      window.location.href = "https://www.ssacollegechennai.com/"; // change to your page
     })
     .catch(() => {
       alert("Something went wrong. Please try again.");

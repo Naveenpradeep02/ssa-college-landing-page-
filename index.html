@@ -20,10 +20,10 @@
       </div>
       <nav class="nav-bar">
         <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Academics </a>
-        <a href="#">Department</a>
-        <a href="#">Contact</a>
+        <a href="#about">About Us</a>
+        <a href="#academics">Academics </a>
+        <a href="#departments">Department</a>
+        <a href="#contact">Contact</a>
       </nav>
       <div class="menu-icon" onclick="openMenu()">
         <i class="fa-solid fa-bars"></i>
@@ -37,10 +37,10 @@
       <hr />
       <nav class="mobile-bar">
         <a href="#" onclick="closeMenu()">Home</a>
-        <a href="#" onclick="closeMenu()">About Us</a>
-        <a href="#" onclick="closeMenu()">Academics </a>
-        <a href="#" onclick="closeMenu()">Department</a>
-        <a href="#" onclick="closeMenu()">Contact</a>
+        <a href="#about" onclick="closeMenu()">About Us</a>
+        <a href="#academics" onclick="closeMenu()">Academics </a>
+        <a href="#departments" onclick="closeMenu()">Department</a>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
       </nav>
     </div>
     <!--  -->
@@ -131,7 +131,7 @@
     <!--  -->
     <section class="section section1">
       <h3>Completed 12th?</h3>
-      <h5>
+      <h5 id="about">
         Choose <span>SSA Women's College,</span><br />
         Chennai — A Safe, Career-Focused Institution <br />
         Built for Your Success!
@@ -183,7 +183,7 @@
       >
     </div>
     <!--  -->
-    <section class="section section5">
+    <section class="section section5" id="academics">
       <div class="image-grid">
         <div class="img-box">
           <img src="./assets/img/1.png" alt="" />
@@ -235,7 +235,7 @@
       >
     </div>
     <!--  -->
-    <section class="section section3">
+    <section class="section section3" id="departments">
       <h4>Undergraduate Programs</h4>
       <div class="education">
         <div class="ed-box">
@@ -483,7 +483,7 @@
       >
     </section>
     <!--  -->
-    <footer>
+    <footer id="contact">
       <div class="container">
         <div class="foot-info">
           <div class="foot-logo">
@@ -582,11 +582,15 @@
         <label for="department">Department:</label>
         <select id="department" name="department" required>
           <option value="">--Select Department--</option>
-          <option value="Computer Science">Computer Science</option>
-          <option value="Information Technology">Information Technology</option>
-          <option value="Electronics">Electronics</option>
-          <option value="Commerce">Commerce</option>
-          <option value="Others">Others</option>
+          <option value="Computer Science">
+            B.Com (General, Corporate Secretaryship, Accounting & Finance)
+          </option>
+          <option value="Information Technology">
+            B.Sc (Computer Science)
+          </option>
+          <option value="Electronics">B.A (English Literature)</option>
+          <option value="Commerce">M.Com (Commerce)</option>
+          <option value="Others">M.A (English)</option>
         </select>
 
         <button type="submit" id="submitBtn">Submit</button>
